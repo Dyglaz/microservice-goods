@@ -1,10 +1,9 @@
-package ag.selm.manager.repository;
+package ag.mag.catalogue.repository;
 
-import ag.selm.manager.entity.Product;
+import ag.mag.catalogue.entity.Product;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 @Repository
 public class InMemoryProductRepository implements ProductRepository {
