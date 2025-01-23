@@ -11,12 +11,12 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class DafaultProductService implements ProductService {
+public class DefaultProductService implements ProductService {
 
     private final ProductRepository productRepository;
 
     @Override
-    public List<Product> findAllProducts() {
+    public Iterable<Product> findAllProducts() {
         return this.productRepository.findAll();
     }
 
